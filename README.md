@@ -1,4 +1,4 @@
-![Mou icon](https://s3.amazonaws.com/blockee/blockee_logo_static.png)
+
 
 ### What is Bookstore Nudge?
 
