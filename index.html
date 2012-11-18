@@ -5,7 +5,11 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-<script type="text/javascript">
+  </head>
+  <body>
+    <h3>Share your location</h3>
+    <p>Make it easier to find a bookstore near you</p>
+    <script type="text/javascript">
 function user_said_no(){
   window.location = "https://maps.google.com/maps?q=bookstore";
   return false;
@@ -16,42 +20,39 @@ function show_map(position) {
   var longitude = position.coords.longitude;
   var latlng = new google.maps.LatLng(latitude, longitude);
   geocoder = new google.maps.Geocoder();
- geocoder.geocode({'latLng': latlng}, function(results, status) {
-  if (status == google.maps.GeocoderStatus.OK) {
-    if (results[0]) {
-var topResultInfo = results[0].address_components;
-var myzip = null;
-for(var i=0; i<topResultInfo.length; i++){
-  var addressPart = topResultInfo[ i ];
-  if(addressPart.types.indexOf("postal_code") > -1){
-    // found a zipcode
-    myzip = addressPart.long_name;
-    window.location = "https://maps.google.com/maps?q=bookstore near "+ myzip;
-     return false;
-    break;
-  }
-}
-    } else {
-      alert("No results found");
+  geocoder.geocode({'latLng': latlng}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      if (results[0]) {
+        var topResultInfo = results[0].address_components;
+        var myzip = null;
+        for(var i=0; i<topResultInfo.length; i++){
+          var addressPart = topResultInfo[ i ];
+          if(addressPart.types.indexOf("postal_code") > -1){
+            // found a zipcode
+            myzip = addressPart.long_name;
+            window.location = "https://maps.google.com/maps?q=bookstore near "+ myzip;
+            return false;
+            // break;
+          }
+        }
+      }
+      else {
+        alert("No results found");
+      }
     }
-  } else {
-    alert("Geocoder failed due to: " + status);
-  }
-});
-
+    else {
+      alert("Geocoder failed due to: " + status);
+    }
+  });
 }
 
-document.onload = function(){
-  if(typeof navigator.geolocation === 'undefined' || !navigator.geolocation){
-    // no geolocation on this guy's computer
-    return user_said_no();
-  }
-  // ask for location
-  navigator.geolocation.getCurrentPosition(show_map, user_said_no);
-  return false;
-};
+if(typeof navigator.geolocation === 'undefined' || !navigator.geolocation){
+  // no geolocation on this guy's computer
+  return user_said_no();
+}
+// ask for location
+navigator.geolocation.getCurrentPosition(show_map, user_said_no);
+setTimeout(user_said_no, 5000);
     </script>
-  </head>
-  <body>
   </body>
 </html>
