@@ -9,7 +9,7 @@ A simple page that uses HTML5 geolocation and google maps to help find local boo
 Sites that want to link to local bookstores rather than just online retailers.
 
 ### Who is mapmeld?
-Nick Doiron he helped with the code, by helped I mean he made it work.
+Nick Doiron. He helped with the code, by helped I mean he made it work.
 
 ### OPEN SOURCE --> License
 
