@@ -13,9 +13,7 @@ Sites that want to link to local bookstores rather than just online retailers.
 
 Nick Doiron. He helped with the code and is fluent in reverse geocoding.
 
-### License
 
-"Support Your Local Book Store" poster
-Copyright (c) 2012, Tamara Shopsin.
+Note: "Support Your Local Book Store" poster by Tamara Shopsin.
 
-Redistribution of code and use in source and binary forms, with or without modification, are permitted. 
+
