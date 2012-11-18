@@ -11,7 +11,7 @@ Sites that want to link to local bookstores rather than just online retailers.
 
 ### Who is mapmeld?
 
-Nick Doiron. He helped with the code and is fluent in reverse geocoding.
+Nick Doiron. He helped with some of the code and is fluent in reverse geocoding.
 
 
 Note: "Support Your Local Book Store" poster by Tamara Shopsin.
