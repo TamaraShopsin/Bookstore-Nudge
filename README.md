@@ -13,13 +13,9 @@ Sites that want to link to local bookstores rather than just online retailers.
 
 Nick Doiron. He helped with the code and is fluent in reverse geocoding.
 
-### OPEN SOURCE --> License
+### License
 
+"Support Your Local Book Store" poster
 Copyright (c) 2012, Tamara Shopsin.
-All rights reserved.
 
-Support Your Local Book Store poster Image by Tamara Shopsin Redistribution is okay -> So long as you don't attribute it to someone else.
-
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+Redistribution of code and use in source and binary forms, with or without modification, are permitted. 
