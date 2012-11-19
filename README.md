@@ -3,7 +3,7 @@
 ### What is Bookstore Nudge?
 
 A simple page that uses HTML5 geolocation and google maps to help find local bookstores.
-Please visit<a href="http://shopsins/book"> http://tamarashopsin.github.com/Bookstore-Nudge/</a> for more info.
+Please visit <a href="http://shopsins/bookstore">http://shopsins/bookstore</a> for more info.
 
 ### Who is it for?
 
